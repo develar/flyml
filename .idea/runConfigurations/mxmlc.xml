@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="mxmlc" type="Application" factoryName="Application">
+    <extension name="snapshooter" />
+    <option name="MAIN_CLASS_NAME" value="flex2.tools.Mxmlc" />
+    <option name="VM_PARAMETERS" value="-Xmx512m -Dsun.io.useCanonCaches=false -Duser.language=en -Duser.region=en -Dapplication.home=$PROJECT_DIR$/../gumbo_t -classpath -jar $PROJECT_DIR$/../gumbo_t/lib/mxmlc.jar" />
+    <option name="PROGRAM_PARAMETERS" value="-load-config=flex_config.xml" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../idea-test" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home" />
+    <option name="ENABLE_SWING_INSPECTOR" value="false" />
+    <option name="ENV_VARIABLES" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <module name="javabuilder-flex" />
+    <envs />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="52432" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="Debug" />
+    <method />
+  </configuration>
+</component>

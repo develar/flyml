@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: slf4j-api-1.6.1.jar snakeyaml-1.7.jar commons-lang-2.4.jar
+  javabuilder-core-1.1.RC1.jar mxmlc-4.5.0.17440.jar
+

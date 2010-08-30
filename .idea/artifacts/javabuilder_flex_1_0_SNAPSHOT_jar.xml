@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="javabuilder-flex-1.0-SNAPSHOT.jar">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="javabuilder-flex-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="javabuilder-flex" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
