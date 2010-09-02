@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="javabuilder-flex:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/javabuilder_flex_jar</output-path>
+    <root id="archive" name="javabuilder_flex.jar">
+      <element id="module-output" name="javabuilder-flex" />
+      <element id="extracted-dir" path="$maven_repository$/org/javabuilders/javabuilder-core/1.1.RC1/javabuilder-core-1.1.RC1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$maven_repository$/com/adobe/flex/compiler/mxmlc/4.5.0.17440/mxmlc-4.5.0.17440.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$maven_repository$/org/yaml/snakeyaml/1.7/snakeyaml-1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$maven_repository$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$maven_repository$/com/adobe/flex/compiler/asc/4.5.0.17440/asc-4.5.0.17440.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$maven_repository$/commons-lang/commons-lang/2.4/commons-lang-2.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

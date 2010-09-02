@@ -6,6 +6,10 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
+      <element id="extracted-dir" path="$maven_repository$/org/javabuilders/javabuilder-core/1.1.RC1/javabuilder-core-1.1.RC1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$maven_repository$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/slf4j-1.6.1/slf4j-simple-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../snakeyaml/target/snakeyaml-1.8-SNAPSHOT.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

@@ -2,7 +2,7 @@
   <configuration default="false" name="mxmlc" type="Application" factoryName="Application">
     <extension name="snapshooter" />
     <option name="MAIN_CLASS_NAME" value="flex2.tools.Mxmlc" />
-    <option name="VM_PARAMETERS" value="-Xmx512m -Dsun.io.useCanonCaches=false -Duser.language=en -Duser.region=en -Dapplication.home=$PROJECT_DIR$/../gumbo_t -classpath -jar $PROJECT_DIR$/../gumbo_t/lib/mxmlc.jar" />
+    <option name="VM_PARAMETERS" value="-Xmx512m -Dsun.io.useCanonCaches=false -Duser.language=en -Duser.region=en -Dapplication.home=$PROJECT_DIR$/../gumbo_t -classpath $PROJECT_DIR$/../gumbo_t/lib/mxmlc.jar" />
     <option name="PROGRAM_PARAMETERS" value="-load-config=flex_config.xml" />
     <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../idea-test" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />

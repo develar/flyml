@@ -10,9 +10,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.javabuilders:javabuilder-core:1.1.RC1" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.8-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: com.adobe.flex.compiler:asc:4.5.0.17440" level="project" />
     <orderEntry type="library" name="Maven: com.adobe.flex.compiler:mxmlc:4.5.0.17440" level="project" />
   </component>
 </module>
