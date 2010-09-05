@@ -1,4 +1,4 @@
-package org.flyti.javaBuilderFlex;
+package org.flyti.flyml;
 
 import flex2.compiler.CompilationUnit;
 import flex2.compiler.Source;
@@ -11,18 +11,13 @@ import flex2.compiler.extensions.IConfigurableExtension;
 import flex2.compiler.io.LocalFile;
 import flex2.compiler.util.NameMappings;
 import flex2.compiler.util.ThreadLocalToolkit;
-import macromedia.asc.parser.ClassDefinitionNode;
-import macromedia.asc.parser.Node;
-import macromedia.asc.parser.NodeFactory;
 import macromedia.asc.parser.ProgramNode;
-import macromedia.asc.util.ObjectList;
-import org.yaml.snakeyaml.error.YAMLException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-public class JavaBuilderFlexCompilerExtension implements IAsCompilerExtension, Extension, IConfigurableExtension {
+public class FlymlCompilerExtension implements IAsCompilerExtension, Extension, IConfigurableExtension {
   private ASTBuilder builder;
 
   public void configure(List<String> parameters) {
@@ -50,10 +45,6 @@ public class JavaBuilderFlexCompilerExtension implements IAsCompilerExtension, E
 
     try {
       builder.build(ymlFile, ((ProgramNode) unit.getSyntaxTree()), unit.getContext().getAscContext());
-    }
-    catch (YAMLException e) {
-      ThreadLocalToolkit.logError(e.getMessage());
-      e.printStackTrace();
     }
     catch (FileNotFoundException e) {
       ThreadLocalToolkit.logError(e.getMessage());

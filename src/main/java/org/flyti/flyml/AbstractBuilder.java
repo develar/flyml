@@ -1,4 +1,4 @@
-package org.flyti.javaBuilderFlex;
+package org.flyti.flyml;
 
 import org.yaml.snakeyaml.parser.ParserImpl;
 import org.yaml.snakeyaml.reader.StreamReader;
@@ -17,7 +17,7 @@ public abstract class AbstractBuilder implements Builder {
 
   private final boolean putBufferInMark;
 
-  private String propertyName;
+  protected String propertyName;
 
   public AbstractBuilder(boolean putBufferInMark) {
     this.putBufferInMark = putBufferInMark;
@@ -39,6 +39,5 @@ public abstract class AbstractBuilder implements Builder {
   }
 
   public void setStringValue(String value) {
-    
   }
 }

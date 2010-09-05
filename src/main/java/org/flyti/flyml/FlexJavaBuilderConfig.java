@@ -1,4 +1,4 @@
-package org.flyti.javaBuilderFlex;
+package org.flyti.flyml;
 
 import org.javabuilders.BuilderConfig;
 import org.javabuilders.ICustomCommand;

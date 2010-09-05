@@ -3,5 +3,5 @@ Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: develar
 Build-Jdk: 1.6.0_20
-extensions-as-compiler-extension: org.flyti.javaBuilderFlex.JavaBuilderFlexCompilerExtension
+extensions-as-compiler-extension: org.flyti.flyml.FlymlCompilerExtension
 

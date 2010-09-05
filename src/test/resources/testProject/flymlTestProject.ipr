@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildJarProjectSettings">
+    <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="BuildServerSettings">
+    <option name="HISTORY" value="" />
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="PASSWORD" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_NAME" />
+    <option name="INSPECTIONS_PROJECT_ID" />
+    <option name="INSPECTIONS_BUILD_TYPE_ID" />
+    <option name="DUPLICATES_BUILD_TYPE_NAME" />
+    <option name="DUPLICATES_PROJECT_ID" />
+    <option name="DUPLICATES_BUILD_TYPE_ID" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="STATUS_DIALOG_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILTER_BY_USER" value="true" />
+    <option name="FILTER_REMOTE_RUN_TREE" value="false" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html|dtd|tld)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
+    </resourceExtensions>
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+      <entry name="?*.ftl" />
+    </wildcardResourcePatterns>
+    <annotationProcessing enabled="false" useClasspath="true" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="EclipseCompilerSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="flex">
+        <modules>
+          <module name="flymlTestProject" />
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
+  <component name="Git.Settings">
+    <option name="GIT_EXECUTABLE" value="/opt/local/bin/git" />
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+    <option name="LINE_SEPARATORS_CONVERSION" value="NONE" />
+  </component>
+  <component name="IdProvider" IDEtalkID="8461738A2FFEE3E5C39765218FB981ED" />
+  <component name="InspectionPassRegistrar">
+    <option name="LOAD_NEW_PROBLEMS" value="true" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state />
+    </entry>
+  </component>
+  <component name="ProjectKey">
+    <option name="state" value="project://default" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/flymlTestProject.iml" filepath="$PROJECT_DIR$/flymlTestProject.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+  </component>
+  <component name="atlassian-ide-plugin-workspace">
+    <option name="bambooConfiguration">
+      <BambooWorkspaceConfiguration>
+        <option name="view">
+          <BambooViewConfigurationBean />
+        </option>
+      </BambooWorkspaceConfiguration>
+    </option>
+    <option name="crucibleConfiguration">
+      <CrucibleWorkspaceConfiguration>
+        <option name="crucibleFilters">
+          <CrucibleFiltersBean>
+            <option name="manualFilter">
+              <CustomFilterBean />
+            </option>
+            <option name="recenltyOpenFilter">
+              <RecentlyOpenReviewsFilter />
+            </option>
+          </CrucibleFiltersBean>
+        </option>
+        <option name="view">
+          <CrucibleViewConfigurationBean />
+        </option>
+      </CrucibleWorkspaceConfiguration>
+    </option>
+    <option name="defaultCredentials">
+      <UserCfgBean />
+    </option>
+  </component>
+  <component name="atlassian-ide-plugin-workspace-issues">
+    <option name="view">
+      <JiraViewConfigurationBean />
+    </option>
+  </component>
+  <component name="libraryTable">
+    <library name="Maven: org.flyti.cocoa:cocoa:swc:1.2-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/cocoa/1.2-SNAPSHOT/cocoa-1.2-SNAPSHOT.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/cocoa/1.2-SNAPSHOT/cocoa-1.2-SNAPSHOT-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/cocoa/1.2-SNAPSHOT/cocoa-1.2-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: flash.flashx:textLayout:swc:1.1.0.604">
+      <CLASSES>
+        <root url="jar://$maven_repository$/flash/flashx/textLayout/1.1.0.604/textLayout-1.1.0.604.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/flash/flashx/textLayout/1.1.0.604/textLayout-1.1.0.604-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/flash/flashx/textLayout/1.1.0.604/textLayout-1.1.0.604-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flex.framework:mx:swc:4.5.0.17440">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/mx/4.5.0.17440/mx-4.5.0.17440.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/mx/4.5.0.17440/mx-4.5.0.17440-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/mx/4.5.0.17440/mx-4.5.0.17440-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flash:playerglobal:swc:10.1">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flash/playerglobal/10.1/playerglobal-10.1.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flash/playerglobal/10.1/playerglobal-10.1-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flash/playerglobal/10.1/playerglobal-10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flex.framework:framework:swc:4.5.0.17440">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/framework/4.5.0.17440/framework-4.5.0.17440.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/framework/4.5.0.17440/framework-4.5.0.17440-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/framework/4.5.0.17440/framework-4.5.0.17440-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flex.framework:spark:swc:4.5.0.17440">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/spark/4.5.0.17440/spark-4.5.0.17440.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/spark/4.5.0.17440/spark-4.5.0.17440-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/spark/4.5.0.17440/spark-4.5.0.17440-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flex.framework:sparkskins:swc:4.5.0.17440">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/sparkskins/4.5.0.17440/sparkskins-4.5.0.17440.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/sparkskins/4.5.0.17440/sparkskins-4.5.0.17440-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/sparkskins/4.5.0.17440/sparkskins-4.5.0.17440-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flex.framework:framework:rb.swc:4.5.0.17440">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/framework/4.5.0.17440/framework-4.5.0.17440-en_US.rb.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/framework/4.5.0.17440/framework-4.5.0.17440-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/framework/4.5.0.17440/framework-4.5.0.17440-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flex.framework:spark:rb.swc:4.5.0.17440">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/spark/4.5.0.17440/spark-4.5.0.17440-en_US.rb.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/spark/4.5.0.17440/spark-4.5.0.17440-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flex/framework/spark/4.5.0.17440/spark-4.5.0.17440-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.flyti:plexus:swc:1.2.3">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/flyti/plexus/1.2.3/plexus-1.2.3.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/flyti/plexus/1.2.3/plexus-1.2.3-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/flyti/plexus/1.2.3/plexus-1.2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.flyti:collections:swc:1.3.1">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/flyti/collections/1.3.1/collections-1.3.1.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/flyti/collections/1.3.1/collections-1.3.1-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/flyti/collections/1.3.1/collections-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.flyti:lang:swc:1.1.5">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/flyti/lang/1.1.5/lang-1.1.5.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/flyti/lang/1.1.5/lang-1.1.5-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/flyti/lang/1.1.5/lang-1.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.flyti.cocoa:cocoa:rb.swc:en_US:1.2-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/cocoa/1.2-SNAPSHOT/cocoa-1.2-SNAPSHOT-en_US.rb.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/cocoa/1.2-SNAPSHOT/cocoa-1.2-SNAPSHOT-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/cocoa/1.2-SNAPSHOT/cocoa-1.2-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.flyti.cocoa:aquaLaF:swc:1.2-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/aquaLaF/1.2-SNAPSHOT/aquaLaF-1.2-SNAPSHOT.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/aquaLaF/1.2-SNAPSHOT/aquaLaF-1.2-SNAPSHOT-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/flyti/cocoa/aquaLaF/1.2-SNAPSHOT/aquaLaF-1.2-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flexunit:flexunit:swc:4.0-rc-1.1">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flexunit/flexunit/4.0-rc-1.1/flexunit-4.0-rc-1.1.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flexunit/flexunit/4.0-rc-1.1/flexunit-4.0-rc-1.1-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flexunit/flexunit/4.0-rc-1.1/flexunit-4.0-rc-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest-as3:swc:1.0.2">
+      <CLASSES>
+        <root url="jar://$maven_repository$/org/hamcrest/hamcrest-as3/1.0.2/hamcrest-as3-1.0.2.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/org/hamcrest/hamcrest-as3/1.0.2/hamcrest-as3-1.0.2-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/org/hamcrest/hamcrest-as3/1.0.2/hamcrest-as3-1.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.digitalprimates.fluint:fluint:swc:1.2.1">
+      <CLASSES>
+        <root url="jar://$maven_repository$/net/digitalprimates/fluint/fluint/1.2.1/fluint-1.2.1.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/net/digitalprimates/fluint/fluint/1.2.1/fluint-1.2.1-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/net/digitalprimates/fluint/fluint/1.2.1/fluint-1.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.adobe.flexunit:uiRunner:swc:4.0-rc-1.1">
+      <CLASSES>
+        <root url="jar://$maven_repository$/com/adobe/flexunit/uiRunner/4.0-rc-1.1/uiRunner-4.0-rc-1.1.swc!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$maven_repository$/com/adobe/flexunit/uiRunner/4.0-rc-1.1/uiRunner-4.0-rc-1.1-asdoc.zip!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$maven_repository$/com/adobe/flexunit/uiRunner/4.0-rc-1.1/uiRunner-4.0-rc-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+          <settings />
+        </UIState>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl>
+              <option name="proportions">
+                <list>
+                  <option value="0.2" />
+                </list>
+              </option>
+            </SplitterProportionsDataImpl>
+          </splitter-proportions>
+          <last-edited>1.6</last-edited>
+        </UIState>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+          <settings />
+        </UIState>
+      </state>
+    </states>
+  </component>
+  <component name="uidesigner-configuration">
+    <option name="INSTRUMENT_CLASSES" value="false" />
+  </component>
+</project>
+

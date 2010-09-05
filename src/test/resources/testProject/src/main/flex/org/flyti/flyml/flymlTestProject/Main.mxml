@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns="cocoa" usePreloader="false">
+  <fx:Script><![CDATA[
+    import a1.TestForm;
+
+    import a2.Test2;
+
+    TestForm;
+    Test2;
+    ]]></fx:Script>
+</Application>

@@ -1,4 +1,4 @@
-package org.flyti.javaBuilderFlex;
+package org.flyti.flyml;
 
 import org.yaml.snakeyaml.Yaml;
 

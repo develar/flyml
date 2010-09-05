@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.flyti</groupId>
+    <artifactId>flash-forge</artifactId>
+    <version>1.0.13</version>
+  </parent>
+
+  <properties>
+		<fdk.version>4.5.0.17440</fdk.version>
+		<flex.sdk.version>4.5.0.17440</flex.sdk.version>
+		<flexMojos.version>3.8-de3.1</flexMojos.version>
+	</properties>
+
+  <name>Flyml Test Project</name>
+  <groupId>org.flyti.flyml</groupId>
+  <artifactId>flymlTestProject</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>swf</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.flyti.cocoa</groupId>
+      <artifactId>cocoa</artifactId>
+      <version>1.2-SNAPSHOT</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>org.flyti.cocoa</groupId>
+      <artifactId>cocoa</artifactId>
+      <version>1.2-SNAPSHOT</version>
+      <type>rb.swc</type>
+      <classifier>en_US</classifier>
+    </dependency>
+
+    <dependency>
+      <groupId>org.flyti.cocoa</groupId>
+      <artifactId>aquaLaF</artifactId>
+      <type>swc</type>
+      <version>1.2-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.flexmojos</groupId>
+        <artifactId>flexmojos-maven-plugin</artifactId>
+        <configuration>
+          <debug>true</debug>
+          <compiledLocales>
+            <locale>en_US</locale>
+          </compiledLocales>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

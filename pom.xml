@@ -9,7 +9,7 @@
   </parent>
 
   <groupId>org.flyti</groupId>
-  <artifactId>javabuilder-flex</artifactId>
+  <artifactId>flyml-flex</artifactId>
   <packaging>jar</packaging>
 
   <name>Flex JavaBuilder</name>
@@ -36,6 +36,13 @@
       <artifactId>mxmlc</artifactId>
       <version>4.5.0.17440</version>
     </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -47,7 +54,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <extensions-as-compiler-extension>org.flyti.javaBuilderFlex.JavaBuilderFlexCompilerExtension</extensions-as-compiler-extension>
+              <extensions-as-compiler-extension>org.flyti.flyml.FlymlCompilerExtension</extensions-as-compiler-extension>
             </manifestEntries>
           </archive>
         </configuration>

@@ -1,4 +1,4 @@
-package org.flyti.javaBuilderFlex;
+package org.flyti.flyml;
 
 import macromedia.asc.parser.*;
 import macromedia.asc.semantics.NamespaceValue;
@@ -11,36 +11,50 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 public class ASTBuilder extends AbstractBuilder {
-  private static final FunctionSignatureNode createChildrenFunctionSignature = new FunctionSignatureNode(null, null);
-  private static final FunctionNameNode createChildrenFunctionName = new FunctionNameNode(Tokens.EMPTY_TOKEN, new IdentifierNode("createChildren", false, -1));
-  private static final AttributeListNode attributeListPublic = new AttributeListNode(null, -1);
+  private static FunctionSignatureNode createChildrenFunctionSignature = new FunctionSignatureNode(null, null);
+
+  private ObjectList<Node> functionStatements;
 
   static {
     createChildrenFunctionSignature.void_anno = true;
-
-    attributeListPublic.items.remove(0);
-    attributeListPublic.hasPublic = true;
   }
 
   public ASTBuilder(boolean putBufferInMark) {
     super(putBufferInMark);
   }
 
-  private static boolean s = true;
-
   public void build(File file, ProgramNode syntaxTree, Context context) throws FileNotFoundException {
+//    createChildrenFunctionSignature = new FunctionSignatureNode(null, null);
+//    createChildrenFunctionSignature.void_anno = true;
+
     ObjectList<Node> items = syntaxTree.pkgdefs.get(0).statements.items;
     // ClassDefinition closer to end
     for (int i = items.size() - 1; i > -1; i--) {
       Node node = items.get(i);
       if (node instanceof ClassDefinitionNode) {
-        createFunction(context, ((ClassDefinitionNode) node).statements);
-//        nodeFactory.statementList(((ClassDefinitionNode) node).statements, AbstractSyntaxTreeUtil.generateVariable(nodeFactory, varName, "Object", true, null));
+        NodeFactory nodeFactory = context.getNodeFactory();
+        StatementListNode functionBody = new StatementListNode(null);
+
+        // use nodeFactory, we need internal_name generation
+        // fucked, fucked, fucked Adobe http://juick.com/develar/913000
+        IdentifierNode functionName = new IdentifierNode("createChildren", false, 0);
+
+        functionStatements = functionBody.items;
+//        functionStatements.add(new ExpressionStatementNode(new MemberExpressionNode(null, new SetExpressionNode(new IdentifierNode("alpha", 0), new ArgumentListNode(new LiteralNumberNode("23"), 0) ), 0)));
+        functionStatements.add(new ExpressionStatementNode(new SetExpressionNode(new IdentifierNode("alpha", 0), new ArgumentListNode(new LiteralNumberNode("23"), 0))));
+
+//        build(file);
+
+        ((ClassDefinitionNode) node).statements.items.add(new FunctionDefinitionNode(context, null, ASTUtil.createOverridePublicAttributeList(), new FunctionNameNode(Tokens.EMPTY_TOKEN, functionName),
+                nodeFactory.functionCommon(context, functionName, createChildrenFunctionSignature, functionBody, 0)));
         break;
       }
     }
+  }
 
-    //build(file);
+  @Override
+  public void setStringValue(String value) {
+    functionStatements.add(new ExpressionStatementNode(new SetExpressionNode(new IdentifierNode(propertyName, true, 0), new ArgumentListNode(new LiteralStringNode(value), 0))));
   }
 
   private void createFunction(Context context, StatementListNode statements) {
@@ -70,8 +84,8 @@ public class ASTBuilder extends AbstractBuilder {
     functionBody.items.add(new ExpressionStatementNode(new MemberExpressionNode(null, callMethod, 0)));
 
     // use nodeFactory, we need internal_name generation
-    FunctionCommonNode functionCommon = nodeFactory.functionCommon(context, createChildrenFunctionName.identifier, createChildrenFunctionSignature, functionBody, 0);
-    statements.items.add(new FunctionDefinitionNode(context, nodeFactory.current_package, attributeListPublic, createChildrenFunctionName, functionCommon));
+//    FunctionCommonNode functionCommon = nodeFactory.functionCommon(context, createChildrenFunctionName.identifier, createChildrenFunctionSignature, functionBody, 0);
+//    statements.items.add(new FunctionDefinitionNode(context, nodeFactory.current_package, attributeListOverrideProtected, createChildrenFunctionName, functionCommon));
   }
 
   private static MemberExpressionNode createTypeMemberExpressionNode(IdentifierNode identifier) {
