@@ -6,6 +6,7 @@ import macromedia.asc.semantics.ReferenceValue;
 import macromedia.asc.util.Context;
 import macromedia.asc.util.Namespaces;
 import macromedia.asc.util.ObjectList;
+import org.flyti.flyml.util.ASTUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,8 +20,10 @@ public class ASTBuilder extends AbstractBuilder {
     createChildrenFunctionSignature.void_anno = true;
   }
 
-  public ASTBuilder(boolean putBufferInMark) {
+  public ASTBuilder(boolean putBufferInMark, PropertyHandlerProvider propertyHandlerProvider) {
     super(putBufferInMark);
+
+    this.propertyHandlerProvider = propertyHandlerProvider;
   }
 
   public void build(File file, ProgramNode syntaxTree, Context context) throws FileNotFoundException {
@@ -40,10 +43,11 @@ public class ASTBuilder extends AbstractBuilder {
         IdentifierNode functionName = new IdentifierNode("createChildren", false, 0);
 
         functionStatements = functionBody.items;
-//        functionStatements.add(new ExpressionStatementNode(new MemberExpressionNode(null, new SetExpressionNode(new IdentifierNode("alpha", 0), new ArgumentListNode(new LiteralNumberNode("23"), 0) ), 0)));
-        functionStatements.add(new ExpressionStatementNode(new SetExpressionNode(new IdentifierNode("alpha", 0), new ArgumentListNode(new LiteralNumberNode("23"), 0))));
 
-//        build(file);
+        PrimitivePropertyHandler defaultPropertyHandler = new PrimitivePropertyHandler();
+        defaultPropertyHandler.setStatements(functionStatements);
+        propertyHandlers.push(defaultPropertyHandler);
+        build(file);
 
         ((ClassDefinitionNode) node).statements.items.add(new FunctionDefinitionNode(context, null, ASTUtil.createOverridePublicAttributeList(), new FunctionNameNode(Tokens.EMPTY_TOKEN, functionName),
                 nodeFactory.functionCommon(context, functionName, createChildrenFunctionSignature, functionBody, 0)));

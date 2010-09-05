@@ -12,6 +12,7 @@ import flex2.compiler.io.LocalFile;
 import flex2.compiler.util.NameMappings;
 import flex2.compiler.util.ThreadLocalToolkit;
 import macromedia.asc.parser.ProgramNode;
+import org.flyti.flyml.cocoa.PropertyHandlerCocoaProvider;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,6 +27,8 @@ public class FlymlCompilerExtension implements IAsCompilerExtension, Extension, 
   public void run(List<Extension> asCompilerExtensions, String gendir, As3Configuration ascConfiguration, NameMappings mappings, Transcoder[] transcoders) {
     // before all, for reduce compilation unit set
     asCompilerExtensions.add(0, this);
+
+    builder = new ASTBuilder(true, new PropertyHandlerCocoaProvider());
   }
 
   public void parse1(CompilationUnit unit, TypeTable typeTable) {
@@ -37,10 +40,6 @@ public class FlymlCompilerExtension implements IAsCompilerExtension, Extension, 
     final File ymlFile = new File(source.getParent(), source.getShortName() + ".yml");
     if (!ymlFile.exists()) {
       return;
-    }
-
-    if (builder == null) {
-      builder = new ASTBuilder(true);
     }
 
     try {

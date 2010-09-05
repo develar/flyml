@@ -48,7 +48,7 @@ public class Composer {
     // Drop the DOCUMENT-START event.
     parser.getEvent();
     // Compose the root node.
-    composeNode(null);
+    composeNode();
     // Drop the DOCUMENT-END event.
     parser.getEvent();
 //    this.anchors.clear();
@@ -56,7 +56,7 @@ public class Composer {
 //    return node;
   }
 
-  private void composeNode(Node parent) {
+  private void composeNode() {
 //    recursiveNodes.add(parent);
     if (parser.checkEvent(Event.ID.Alias)) {
       // todo support alias
@@ -119,37 +119,27 @@ public class Composer {
   }
 
   private void composeMappingNode(String anchor) {
-    MappingStartEvent startEvent = (MappingStartEvent) parser.getEvent();
-    String tag = startEvent.getTag();
-    Tag nodeTag;
-    boolean resolved = false;
-    if (tag == null || tag.equals("!")) {
-      nodeTag = resolver.resolve(NodeId.mapping, null, startEvent.getImplicit());
-      resolved = true;
-    }
-    else {
-      nodeTag = new Tag(tag);
-    }
-    MappingNode node = new MappingNode(nodeTag, resolved, new ArrayList<NodeTuple>(), startEvent.getStartMark(), null, startEvent.getFlowStyle());
     if (anchor != null) {
 //      anchors.put(anchor, node);
     }
+
+    builder.startMap();
     while (!parser.checkEvent(Event.ID.MappingEnd)) {
       String key = composeMapKey();
       char firstChar = key.charAt(0);
-      if (firstChar >= 'A' && firstChar <= 'Z') {
+      if (firstChar <= 'Z' && firstChar >= 'A') {
         builder.createObject(key);
       }
       else {
         builder.setProperty(key);
       }
 
-      composeNode(node);
+      composeNode();
 //      Node itemValue = composeNode(node);
 //      node.getValue().add(new NodeTuple(itemKey, itemValue));
     }
-    Event endEvent = parser.getEvent();
-    node.setEndMark(endEvent.getEndMark());
+    builder.endMap();
+
 //    return node;
   }
 

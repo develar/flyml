@@ -1,4 +1,4 @@
-package org.flyti.flyml;
+package org.flyti.flyml.util;
 
 import macromedia.asc.parser.AttributeListNode;
 import org.yaml.snakeyaml.Yaml;
